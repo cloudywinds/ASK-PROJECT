@@ -192,13 +192,13 @@
 .travelAdvert{
     display: flex;
     background-color: #3882F6;
-    border-radius: 10px;
-    padding: 50px 1em;
+    border-radius: 5px;
+    padding: 50px 0em;
 
 }
 
 .advertText{
-    margin: 0px 5em;
+    margin: 0px 10em;
     display: flex;
     flex-direction: column;
     color: white;
@@ -217,20 +217,22 @@
 }
 
 .advertBookingLink{
-    margin: 0px 5em;
-    background-color: #F9FAF8;
+    margin: 0px 10em;
+    background-color: #3882F6;
     border-radius: 0.5em;
     font-size: 1.25em;
     padding: 0.5em 1em;
-    color: #3882F6;
+    color: #F9FAF8;
     text-decoration: none;
     transition: 0.5s;
+    border-color: #F9FAF8;
+    border-style: solid;
+    border-width: 0.1em;
 }
 
 .advertBookingLink:hover{
-    background-color: #23519b;
-    color: #F9FAF8;
-    opacity: 0.9;
+    background-color: #F9FAF8;
+    color: #3882F6;
 }
 
 .advertBookingLink:active{
