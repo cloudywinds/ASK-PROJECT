@@ -211,21 +211,32 @@
 }
 
 .advertButton{
-    
-    margin: 0px 5em;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 
 .advertBookingLink{
+    margin: 0px 5em;
     background-color: #F9FAF8;
     border-radius: 0.5em;
     font-size: 1.25em;
     padding: 0.5em 1em;
     color: #3882F6;
     text-decoration: none;
+    transition: 0.5s;
 }
+
+.advertBookingLink:hover{
+    background-color: #23519b;
+    color: #F9FAF8;
+    opacity: 0.9;
+}
+
+.advertBookingLink:active{
+    opacity: 0.7;
+}
+
 
 .layerFourContent{
     background-color: #1F2937;
