@@ -11,7 +11,7 @@
 }
 .layerOneHeader{
     box-shadow: inset 0 0 20em 8em #000;
-    background-image: url("images/Kuala_Lumpur_Skyline_at_dusk_1.jpg");
+    background-image: url("./images/Kuala_Lumpur_Skyline_at_dusk_1.jpg");
     width: 100%;
     height: 100%;
 }
