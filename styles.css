@@ -6,9 +6,11 @@
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 .layerOneHeader{
-    box-shadow: inset 0 0 15em 5em #000;
+    box-shadow: inset 0 0 20em 8em #000;
     background-image: url("images/Kuala_Lumpur_Skyline_at_dusk_1.jpg");
     width: 100%;
     height: 100%;
@@ -92,6 +94,10 @@
     gap: 1rem;
 }
 
+.contentHeroText span{
+    color: #e9f2ff;
+}
+
 .layerOneContent .mainHeroText{
     color: #F9FAF8;
     font-size: 5rem;
@@ -133,7 +139,7 @@
 
 .layerTwoMain .layerTwoHero{
     letter-spacing: 1px;
-    font-size: 2.25rem;
+    font-size: 2.5rem;
     font-weight: bolder;
     color: #1F2937;
     margin: 6rem 0rem 4rem 0rem;
@@ -187,7 +193,7 @@
     color: #1F2937;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     text-align: center;
     transition: 0.5s;
     
@@ -288,7 +294,7 @@
 
 
 .layerFourContent{
-    background-color: #1F2937;
+    background-color: #081322;
     padding: 5rem 0rem;
 }
 
