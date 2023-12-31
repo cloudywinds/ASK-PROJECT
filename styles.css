@@ -15,7 +15,7 @@ html{
 }
 
 .layerOneHeader{
-    box-shadow: inset 0 0 20em 8em #000;
+    box-shadow: inset 0 0 22em 10em #000;
     background-image: url("./images/Kuala_Lumpur_Skyline_at_dusk_1.jpg");
     width: 100%;
     height: 100%;
@@ -110,6 +110,7 @@ html{
 .layerOneContent .mainSubText {
     font-size: 1.5rem;
     color: white;
+    text-shadow: 0.15rem 0.15rem 0.5rem black;
 }
 
 .contentHeroText .mainButton{
@@ -175,6 +176,10 @@ html{
     border-radius: 0.6rem;
     transition: 0.8s;
 }
+.layerTwoImageContent img{
+    box-shadow: inset 0em 10em 10em #000;
+}
+
 
 .layerTwoImages .layerTwoImageBorders:hover{
     transform: scale(1.05);
@@ -225,6 +230,7 @@ html{
     font-weight: lighter;
     font-style: italic;
     color: #1F2937;
+    text-shadow: 0.3rem 0.3rem 1.5rem rgb(46, 46, 46);
 }
 
 .layerThreeBottomQuote{
@@ -328,4 +334,3 @@ html{
 #active{
     text-decoration: underline;
 }
-
