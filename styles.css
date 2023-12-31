@@ -1,6 +1,6 @@
 /* SORRY TO ANYONE READING FOR THE SPAGHETTI / MESSY CODE */
 /* LAYER ONE */
-* {
+* { 
     padding:0px;
     margin: 0px;
     font-family: 'Roboto', sans-serif;
@@ -35,17 +35,39 @@
     font-size: 24px;
 }
 
+
 .headerNavBar .linksNavBar a{
     text-decoration: none;
+    overflow:hidden;
     color: #E5E7EB;
     font-size: 18px;
     transition: 0.5s;
+    display: inline-block;
+    position: relative;
 }
 
 .headerNavBar .linksNavBar a:hover{
-    opacity: 0.8;
-
+    transform: scale(1.1);
 }
+
+.headerNavBar .linksNavBar a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color:#E5E7EB;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .headerNavBar .linksNavBar a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
 
 
 .layerOneContent{
@@ -96,6 +118,7 @@
 }
 
 .contentHeroText .mainButton:hover{
+    transform: scale(1.05);
     background-color: white;
     color:#3882F6;
 }
@@ -107,50 +130,72 @@
 /* LAYER 2  */
 
 .layerTwoMain{
-
-    margin-bottom: 100px;
+    margin-bottom: 8rem;
 }
 
 .layerTwoMain .layerTwoHero{
     font-size: 36px;
     font-weight: bolder;
     color: #1F2937;
-    margin: 30px 0px;
+    margin: 6rem 0px 4rem 0px;
     text-align: center;
 }
 
-.layerTwoMain .imgcontainer{
+.layerTwoMain .layerTwoHero span{
+    font-size: 36px;
+    color:#3882F6;  
+}
+
+.layerTwoMain .layerTwoImages{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-.imgcontainer .container{
+.layerTwoImages .layerTwoImageBorders{
     
     border-style:solid ;
     border-radius: 15px;
-    padding: 5px 5px 0px 5px;
+    padding: 0.25em 0.25em 0em 0.25em;
     border-color:#3882F6;
+    transition: 0.5s;
     
 }
 
-.imgcontainer .container img{
+.layerTwoImages .layerTwoImageBorders .layerTwoImageContent{
     width: 400px;
     height: auto;
     border-radius: 10px;
+    transition: 0.8s;
 }
 
-.imgbox{    
+.layerTwoImages .layerTwoImageBorders:hover{
+    transform: scale(1.05);
+    border-color: #1F2937;
+}
+
+.layerTwoImages .layerTwoImageBorders:hover{
+    transform: scale(1.05);
+}
+
+.layerTwoImageContainers{    
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-.imgbox p{
+.cityImageCaption{
     color: #1F2937;
     text-decoration: none;
     font-weight: bold;
     font-size: 20px;
     text-align: center;
+    transition: 0.5s;
+    
+}
+
+.layerTwoImageBorders:hover ~ .cityImageCaption {
+    transform: scale(1.05);
+    margin-top: 0.5em;
 }
 
 /* LAYER THREE QUOTE */
@@ -231,6 +276,8 @@
 }
 
 .advertBookingLink:hover{
+    border-radius: 0.3em;
+    transform: scale(1.05);
     background-color: #F9FAF8;
     color: #3882F6;
 }
