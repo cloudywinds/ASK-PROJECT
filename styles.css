@@ -198,6 +198,8 @@ html{
 }
 
 .cityImageCaption{
+    display: inline-flex;
+    align-self: center;
     letter-spacing: 1.2px;
     color: #1F2937;
     text-decoration: none;
@@ -206,6 +208,28 @@ html{
     text-align: center;
     transition: 0.5s;
     margin: 0.5rem 0rem;
+}
+
+.cityImageCaption:hover{
+    transform: scale(1.15);
+}
+
+.cityImageCaption::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color:#000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+.cityImageCaption:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 .layerTwoImageBorders:hover ~ .cityImageCaption {
@@ -237,11 +261,7 @@ html{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-
-}
-
-.layerThreeBottomQuote .emptyDiv{
-    flex:2 1 1;
+    gap:50rem;
 }
 
 .layerThreeQuota{
@@ -327,6 +347,7 @@ html{
 .layerFourContent .footerText{
     text-align: center;
     color:#E5E7EB;
+    cursor: default;
 }
 
 /* OTHERS */
