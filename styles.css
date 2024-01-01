@@ -31,7 +31,6 @@ html{
     align-items: center;
     z-index: 100;
     padding: 1.5rem 0rem;
-    flex-wrap:wrap;
 }
 
 .headerNavBar .linksNavBar{
@@ -39,7 +38,6 @@ html{
     align-items: center;
     justify-content: center;
     gap: 6.5rem;
-    flex-wrap:wrap;
 }
 
 
